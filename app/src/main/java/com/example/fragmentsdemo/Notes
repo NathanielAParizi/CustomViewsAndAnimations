@@ -1,0 +1,54 @@
+*******   FRAGMENTS ***********
+
+    - What is a fragment?
+
+        - An UI Element which acts like a sub Activity
+        - Fragments are hosted by activates
+        - Activities is required for a fragment to exist
+        - Fragment have their own lifecycle which is tied to the activity lifecycle
+
+            - States of Fragment Lifestyle
+                - onAttach
+                       - When the fragment is being assigned to the activity
+                - onCreate
+                        - When the fragment is inflated into memory
+                - onCreateView
+                        - When the view for the fragment is rendered
+                - onActivityCreated
+                        - After the hsot activity is completed with its creation
+                - onStart
+                        - When the fragment is coming into the foreground, visible but intractable
+                - onResume
+                        - When the fragment is fully into hte foreground
+                - onPause
+                        -When the fragment is going into the background. visible but not interactble
+                - onStop
+                        - When the fragment is fully into the background
+                - onDestroyView
+                        - When the view for the item is destroyed
+                - onDestroy
+                        When the memory for hte fragment is deallocate
+                - onDetach
+                    - When the fragment is disassociated with the activity
+
+    2 Types of Fragments
+
+        - Static Fragments
+            - Add to activity using the <fragment> tag in the layout for the host activity.
+            - Cannot be removed or replaced
+
+
+        - Dynamic Fragments
+            - Add to the activity by using the fragment manager
+            - Begin fragment transaction
+            - 2 methods:
+                - add
+                    - adds new instance of the fragment on top of the fragment stack
+                - replace
+                    - replace the current fragment located in the defined space with a new
+                        instance of the fragment.
+
+            - Define the TAG for the FRAGMENT in the Fragment Stack.
+            - commit()
+
+            
