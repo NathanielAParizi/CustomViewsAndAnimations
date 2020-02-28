@@ -48,7 +48,13 @@
                     - replace the current fragment located in the defined space with a new
                         instance of the fragment.
 
-            - Define the TAG for the FRAGMENT in the Fragment Stack.
-            - commit()
+                 - Define the TAG for the FRAGMENT in the Fragment Stack.
+                 - commit()
 
-            
+
+//*****
+
+   event bus
+   shared prefs
+   intents
+   design patterns
