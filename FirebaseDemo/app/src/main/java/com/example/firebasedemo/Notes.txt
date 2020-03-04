@@ -1,0 +1,61 @@
+- OAUTH
+
+    0 Convention used by remote servers to authenticate users via a authentication token
+    - User enters username and password, hashed and encrypted into a token string, it gets sent
+        and decrypted to check if the user is legitimate.
+    - OAUTH2
+
+- Push Notifications
+
+    - Common Push notificiation clients
+        - Firebase Cloud Messaging
+        - GCM (Google Cloud Messaging is depricated)
+        - Urban Airship
+        - Parse
+    - 2 Ways to send push notifications
+        - Online GUI (eb site)
+        - Network request (Build URL with message)
+    - To implement push notifications into project
+        - Android Service that will receive the message or notification
+            - Override the onReceive Method
+            - Receive the data for the notification
+            - Build the notification
+            - If using Android version Oreo or above
+                - Associate that notification to a notification channel
+            - Notify the notification manager and associate the built notification.
+
+How do you setup a layout so that databinding can be utilized?
+Whats commonly found in model packages? POJOs and data classes
+Call factory adapter?
+GSON Converter
+Scheduler?
+Common observable types?
+Flat map?
+Difference between hot and cold observables?
+Describe the observer pattern?
+
+Retrofit?
+Logging interceptor to a Retrofit instance?
+What is the advantage of using Retrofit GSON converter?
+
+What type of obect does Rterofit return by default?
+
+hw do I modify retrofit so that I can use RXJAVA observables?
+What is the difference between enqueue and execute?
+How do I emplement cahcing with OKHTTP?
+
+Push notifications
+Retrofit
+Async operation schemes
+
+Coroutine
+
+1. What is Reactive Programming?
+
+2. What are cold observables?
+3. What are hot observables?
+4. What is back pressure when talking about RxJava?
+
+The observer pattern is a software design pattern in which an object, called the subject,
+ maintains a list of its dependents, called observers, and notifies them automatically of any
+ state changes, usually by calling one of their methods.
