@@ -1,0 +1,4 @@
+Encryption***
+
+- Cipher is the Java way to encrypt and decrypt
+- Keystore will allow us to get Keys for our encryption data
