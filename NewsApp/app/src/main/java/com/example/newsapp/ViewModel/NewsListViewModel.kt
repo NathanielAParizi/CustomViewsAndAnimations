@@ -1,5 +1,6 @@
 package com.example.newsapp.ViewModel
 
+
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.newsapp.Datasource.Remote.API_KEY
@@ -9,7 +10,6 @@ import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 
 class NewsListViewModel : ViewModel() {
-
     val newsList = MutableLiveData<NewsApiResponse>()
     init {
         NewsApiService
@@ -20,5 +20,4 @@ class NewsListViewModel : ViewModel() {
             .map { result -> newsList.postValue(result) }
             .subscribe()
     }
-
 }
