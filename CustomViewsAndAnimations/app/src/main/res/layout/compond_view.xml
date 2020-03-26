@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tvLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_launcher_background"
+        android:textAlignment="center"
+        android:textSize="28sp" />
+    <TextView
+        android:id="@+id/tvdislike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_launcher_foreground"
+        android:textAlignment="center"
+        android:textSize="28sp" />
+</merge>
